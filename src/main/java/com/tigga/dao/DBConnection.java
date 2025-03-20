@@ -13,7 +13,7 @@ public class DBConnection {
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
-            System.err.println("❌ Database Connection Failed! Check MySQL settings.");
+            System.err.println("Database Connection Failed! Check MySQL settings.");
             e.printStackTrace();
             return null;
         }
